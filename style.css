@@ -4,7 +4,7 @@
 
     --surface: #ffffff;
 
-    --ink: #101714;
+    --ink: #1456d9;
 
     --muted: #68716d;
 
@@ -1305,7 +1305,7 @@ select {
 
 footer {
     background:
-        var(--dark);
+        var(--accent-dark);
     border-top:
         1px solid
         rgba(255, 255, 255, 0.1);
