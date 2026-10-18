@@ -6,16 +6,18 @@
 
     <meta
         name="description"
-        content="Weon Networks - Fast, reliable and affordable internet connectivity."
+        content="Weon Networks - Internet from the Future."
     >
 
-    <title>Weon Networks | Reliable Internet</title>
+    <title>Weon Networks | Internet from the future</title>
     <link
         rel="icon"
         type="image/png"
         href="assets/images/logo.png"
     >
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -36,8 +38,8 @@
                     class="site-logo"
                 >
 
-                <span>
-                    Weon<span>Networks</span>
+                <span class="compname">
+                    Weon Networks
                 </span>
 
             </a>
@@ -92,13 +94,13 @@
 
                     <div class="eyebrow">
                         <span></span>
-                        Fast. Reliable. Connected.
+                        Internet from the Future
                     </div>
 
 
                     <h1>
-                        Internet that keeps
-                        <em>your world moving.</em>
+                        Unlimited Internet
+                        <em>Unlimited Freedom.</em>
                     </h1>
 
 
@@ -277,160 +279,308 @@
 
                 </div>
 
+                <!-- WEON NETWORKS CARD COMPONENT -->
+                <div class="weon-card-container">
+                <style>
+                    /* Scope styles within container to avoid affecting external website styles */
+                    .weon-card-container {
+                    font-family: inherit !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    }
 
+                    .weon-card {
+                    width: 100%;
+                    max-width: 580px;
+                    background-color: #ffffff;
+                    border-radius: 20px;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+                    overflow: hidden;
+                    border: 1px solid #e1e8ed;
+                    box-sizing: border-box;
 
-                <div class="plans-grid">
+                    transform: scale(1.18); /* Adjust this number: 1.1 = 10% bigger, 1.2 = 20% bigger */
+                    transform-origin: center;
+                    }
 
-                    <!-- PLAN 1 -->
+                    /* Header Section */
+                    .weon-header {
+                    background-color: #1752a5;
+                    color: #ffffff;
+                    padding: 24px 20px 30px;
+                    text-align: center;
+                    position: relative;
+                    border-bottom-left-radius: 50% 20px;
+                    border-bottom-right-radius: 50% 20px;
+                    }
 
-                    <article class="plan-card">
+                    .weon-logo-group {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 12px;
+                    }
 
-                        <span class="plan-label">
-                            Starter
-                        </span>
+                    .weon-logo-icon {
+                    width: 70px;
+                    height: 70px;
+                    border: 2px solid #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    padding: 4px;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    }
 
-                        <h3>
-                            20 Mbps
-                        </h3>
+                    .weon-logo-img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: contain;
+                    border-radius: 20px;
 
-                        <p class="plan-price">
-                            KES
-                            <strong>1,500</strong>
-                            <small>/month</small>
-                        </p>
+                    }
 
-                        <p>
-                            Great for everyday browsing and social media.
-                        </p>
+                    .weon-title-area {
+                    text-align: left;
+                    }
 
-                        <ul>
-                            <li>Web browsing</li>
-                            <li>Social media</li>
-                            <li>HD streaming</li>
-                        </ul>
+                    .weon-brand-name {
+                    font-size: 22px;
+                    font-weight: 800;
+                    letter-spacing: 0.5px;
+                    line-height: 1.1;
+                    margin: 0;
+                    }
 
-                        <a href="#get-connected">
-                            Choose plan
-                            <span>→</span>
-                        </a>
+                    .weon-tagline {
+                    font-size: 10px;
+                    letter-spacing: 1.5px;
+                    opacity: 0.9;
+                    margin-top: 3px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    }
 
-                    </article>
+                    /* Speed Badge */
+                    .weon-speed-badge {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    border: 2px solid #1752a5;
+                    color: #1752a5;
+                    border-radius: 12px;
+                    padding: 6px 20px;
+                    font-weight: 800;
+                    font-size: 22px;
+                    margin: 20px auto 15px;
+                    letter-spacing: 0.5px;
+                    }
 
+                    .weon-speed-icon {
+                    display: flex;
+                    gap: 2px;
+                    }
 
+                    .weon-speed-icon span {
+                    display: block;
+                    width: 4px;
+                    height: 14px;
+                    background-color: #1752a5;
+                    border-radius: 2px;
+                    transform: skewX(-15deg);
+                    }
 
-                    <!-- PLAN 2 -->
+                    /* Content & Pricing Grid */
+                    .weon-body {
+                    padding: 0 16px 20px;
+                    text-align: center;
+                    }
 
-                    <article class="plan-card">
+                    .weon-plans {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 10px;
+                    margin-top: 10px;
+                    }
 
-                        <span class="plan-label">
-                            Popular
-                        </span>
+                    .weon-plan-box {
+                    border: 2px solid #1752a5;
+                    border-radius: 14px;
+                    overflow: hidden;
+                    background-color: #ffffff;
+                    display: flex;
+                    flex-direction: column;
+                    }
 
-                        <h3>
-                            30 Mbps
-                        </h3>
+                    .weon-plan-header {
+                    background-color: #ffffff;
+                    color: #1752a5;
+                    padding: 6px 4px;
+                    font-size: 12px;
+                    font-weight: 800;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 4px;
+                    text-transform: uppercase;
+                    }
 
-                        <p class="plan-price">
-                            KES
-                            <strong>2,000</strong>
-                            <small>/month</small>
-                        </p>
+                    .weon-arrow-icon {
+                    width: 16px;
+                    height: 16px;
+                    background-color: #1752a5;
+                    color: #ffffff;
+                    border-radius: 50%;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 10px;
+                    }
 
-                        <p>
-                            Balanced speed for households and remote work.
-                        </p>
+                    .weon-plan-price-box {
+                    background-color: #1752a5;
+                    color: #ffffff;
+                    padding: 10px 4px;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    }
 
-                        <ul>
-                            <li>HD streaming</li>
-                            <li>Video calls</li>
-                            <li>Online work</li>
-                        </ul>
+                    .weon-currency {
+                    font-size: 9px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    opacity: 0.85;
+                    margin-bottom: 2px;
+                    }
 
-                        <a href="#get-connected">
-                            Choose plan
-                            <span>→</span>
-                        </a>
+                    .weon-price {
+                    font-size: 18px;
+                    font-weight: 800;
+                    line-height: 1;
+                    }
 
-                    </article>
+                    /* Footer / Contact */
+                    .weon-footer {
+                    padding: 0 16px 20px;
+                    }
 
+                    .weon-contact-pill {
+                    background-color: #1752a5;
+                    color: #ffffff;
+                    border-radius: 30px;
+                    padding: 10px 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 0.3px;
+                    }
 
+                    .weon-whatsapp-icon {
+                    width: 18px;
+                    height: 18px;
+                    fill: currentColor;
+                    }
 
-                    <!-- PLAN 3 -->
+                    /* Responsive adjustments */
+                    @media (max-width: 400px) {
+                    .weon-plans {
+                        grid-template-columns: 1fr;
+                    }
+                    .weon-price {
+                        font-size: 22px;
+                    }
+                    .weon-contact-pill {
+                        font-size: 12px;
+                    }
+                    }
+                </style>
+                <div class="weon-card">
+                    <!-- Blue Curved Header -->
+                    <div class="weon-header">
+                    <div class="weon-logo-group">
+                    <div>
+                        <img src="assets/images/logo.png" alt="weon logo" class="weon-logo-img">
+                    </div>
+                        <div class="weon-title-area">
+                        <h2 class="weon-brand-name">WEON NETWORKS</h2>
+                        <div class="weon-tagline">Internet From The Future</div>
+                        </div>
+                    </div>
+                    </div>
 
-                    <article class="plan-card featured">
+                    <!-- Body Content -->
+                    <div class="weon-body">
+                    <!-- Speed Badge -->
+                    <div class="weon-speed-badge">
+                        <div class="weon-speed-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </div>
+                        20MBPS
+                    </div>
 
-                        <div class="featured-badge">
-                            MOST POPULAR
+                    <!-- Pricing Options -->
+                    <div class="weon-plans">
+                        <!-- Daily Plan -->
+                        <div class="weon-plan-box">
+                        <div class="weon-plan-header">
+                            <span class="weon-arrow-icon">&#10095;</span>
+                            DAILY
+                        </div>
+                        <div class="weon-plan-price-box">
+                            <span class="weon-currency">KSH</span>
+                            <span class="weon-price">99/-</span>
+                        </div>
                         </div>
 
-                        <span class="plan-label">
-                            Home Plus
-                        </span>
+                        <!-- Weekly Plan -->
+                        <div class="weon-plan-box">
+                        <div class="weon-plan-header">
+                            <span class="weon-arrow-icon">&#10095;</span>
+                            WEEKLY
+                        </div>
+                        <div class="weon-plan-price-box">
+                            <span class="weon-currency">KSH</span>
+                            <span class="weon-price">499/-</span>
+                        </div>
+                        </div>
 
-                        <h3>
-                            50 Mbps
-                        </h3>
+                        <!-- Monthly Plan -->
+                        <div class="weon-plan-box">
+                        <div class="weon-plan-header">
+                            <span class="weon-arrow-icon">&#10095;</span>
+                            MONTHLY
+                        </div>
+                        <div class="weon-plan-price-box">
+                            <span class="weon-currency">KSH</span>
+                            <span class="weon-price">1499/-</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
 
-                        <p class="plan-price">
-                            KES
-                            <strong>2,300</strong>
-                            <small>/month</small>
-                        </p>
-
-                        <p>
-                            More room for multiple devices and heavy streaming.
-                        </p>
-
-                        <ul>
-                            <li>Multiple HD streams</li>
-                            <li>Work from home</li>
-                            <li>Online gaming</li>
-                        </ul>
-
-                        <a href="#get-connected">
-                            Choose plan
-                            <span>→</span>
-                        </a>
-
-                    </article>
-
-
-
-                    <!-- PLAN 4 -->
-
-                    <article class="plan-card">
-
-                        <span class="plan-label">
-                            Power
-                        </span>
-
-                        <h3>
-                            70 Mbps
-                        </h3>
-
-                        <p class="plan-price">
-                            KES
-                            <strong>2,899</strong>
-                            <small>/month</small>
-                        </p>
-
-                        <p>
-                            For households that need serious bandwidth.
-                        </p>
-
-                        <ul>
-                            <li>4K streaming</li>
-                            <li>Large downloads</li>
-                            <li>Many devices</li>
-                        </ul>
-
-                        <a href="#get-connected">
-                            Choose plan
-                            <span>→</span>
-                        </a>
-
-                    </article>
-
+                    <!-- Footer Phone Numbers -->
+                    <div class="weon-footer">
+                    <div class="weon-contact-pill">
+                        <!-- WhatsApp Icon -->
+                        <svg class="weon-whatsapp-icon" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        0111 220 627 | 0768 190 138
+                    </div>
+                    </div>
+                </div>
                 </div>
 
             </div>
@@ -655,18 +805,18 @@
 
                         <div>
                             <span>Call</span>
-                            <strong>YOUR PHONE NUMBER</strong>
+                            <strong>0111 220 627 , 0768 190 138</strong>
                         </div>
 
                         <div>
                             <span>WhatsApp</span>
-                            <strong>YOUR WHATSAPP NUMBER</strong>
+                            <strong>0111 220 627 , 0768 190 138</strong>
                         </div>
 
-                        <div>
+                        <!-- <div>
                             <span>Email</span>
                             <strong>YOUR EMAIL ADDRESS</strong>
-                        </div>
+                        </div> -->
 
                     </div>
 
@@ -787,7 +937,7 @@
                     <div class="contact-card">
 
                         <img
-                            src="assets/images/logo.jpg"
+                            src="assets/images/logo.png"
                             alt="Weon Networks logo"
                             class="site-logo"
                         >
