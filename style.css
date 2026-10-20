@@ -4,15 +4,17 @@
 
     --surface: #ffffff;
 
-    --ink: #1752a5;
+    --ink: #0A64BC;
 
     --muted: #68716d;
 
     --line: #dfe4df;
 
-    --accent: #1752a5;
+    --accent: #0A64BC;
 
     --accent-dark: #0d45b5;
+
+    /* --accent-dark: #0d45b5; */
 
     --dark: #0b1424;
 
@@ -36,6 +38,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 4.8125rem;
 }
 
 body {
@@ -57,11 +60,18 @@ body {
     border-radius: 15px;
 }
 
+/*favicon*/
+.site-header img, 
+.site-logo {
+    border-radius: 20px;
+}
+
 .site-logo {
     width: 60px;
     height: 60px;
     object-fit: contain;
     display: block;
+    border-radius: 20px;
 }
 
 a {
@@ -243,7 +253,6 @@ select {
         var(--accent-dark);
 }
 
-
 /* ================= HERO TITLE ================= */
 
 .hero h1 {
@@ -257,7 +266,7 @@ select {
 
 .hero h1 em {
     color:
-        #1752a5;
+        #0A64BC;
     font-style:
         normal;
 }
@@ -478,7 +487,7 @@ select {
     width: 10px;
     height: 10px;
     background:
-        #1752a5;
+        #0A64BC;
     border-radius:
         50%;
     box-shadow:
@@ -520,7 +529,7 @@ select {
 
 .stats-strip {
     background:
-        var(--dark);
+        var(--ink);
     color:
         #fff;
 }
@@ -538,7 +547,7 @@ select {
     gap: 2px;
     border-right:
         1px solid
-        rgba(255, 255, 255, 0.1);
+        var(--surface);
 }
 
 .stats div:first-child {
@@ -555,12 +564,12 @@ select {
     font-size:
         1.1rem;
     color:
-        var(--accent);
+        var(--surface);
 }
 
 .stats span {
     color:
-        #a7b0ab;
+        var(--surface);
     font-size:
         0.76rem;
 }
@@ -606,7 +615,7 @@ select {
     margin:
         0;
     color:
-        var(--muted);
+        var(--surface);
 }
 
 
@@ -803,14 +812,14 @@ select {
 
 .section-dark {
     background:
-        var(--dark);
+        var(--ink);
     color:
         #fff;
 }
 
 .section-heading.light .eyebrow {
     color:
-        #9ca8a1;
+        #fff;
 }
 
 .section-heading.light h2 {
@@ -820,7 +829,7 @@ select {
 
 .section-heading.light > p {
     color:
-        #9ca8a1;
+        #fff;
 }
 
 
@@ -833,7 +842,7 @@ select {
         repeat(4, 1fr);
     border-top:
         1px solid
-        rgba(255, 255, 255, 0.13);
+        var(--surface);
 }
 
 .feature {
@@ -845,7 +854,7 @@ select {
         25px;
     border-right:
         1px solid
-        rgba(255, 255, 255, 0.13);
+        var(--surface);
 }
 
 .feature:last-child {
@@ -855,7 +864,7 @@ select {
 
 .feature-number {
     color:
-        var(--accent);
+        var(--surface);
     font-size:
         0.72rem;
     font-weight:
@@ -873,7 +882,7 @@ select {
 
 .feature p {
     color:
-        #9ba69f;
+        var(--surface);
     font-size:
         0.83rem;
     margin:
@@ -949,7 +958,7 @@ select {
     border-radius:
         35px;
     background:
-        var(--dark);
+        var(--accent);
 }
 
 .coverage-orbit {
@@ -957,7 +966,7 @@ select {
         absolute;
     border:
         1px solid
-        rgba(20, 86, 217, 0.55);
+        var(--surface);
     border-radius:
         50%;
 }
@@ -992,14 +1001,14 @@ select {
     border-radius:
         50%;
     color:
-        var(--dark);
-    background:
         var(--accent);
+    background:
+        var(--bg);
     box-shadow:
         0 0 0 18px
-        rgba(20, 86, 217, 0.10),
+        var(--line),
         0 0 80px
-        rgba(20, 86, 217, 0.35);
+        var(--surface);
 }
 
 .coverage-label {
@@ -1017,16 +1026,16 @@ select {
 
 .coverage-label strong {
     font-size:
-        0.72rem;
+        0.58rem;
     letter-spacing:
         0.12em;
 }
 
 .coverage-label span {
     color:
-        #8e929a;
+        #fff;
     font-size:
-        0.7rem;
+        0.65rem;
 }
 
 
@@ -1056,7 +1065,7 @@ select {
 }
 
 
-/* ================= CONTACT MINI ================= */
+/* =================  MINI ================= */
 
 .contact-mini {
     display:
@@ -1081,10 +1090,8 @@ select {
 
 .contact-mini span,
 .contact-details span {
-    color:
-        #898c93;
     font-size:
-        0.68rem;
+        0.8rem;
     text-transform:
         uppercase;
     letter-spacing:
@@ -1095,7 +1102,7 @@ select {
 
 .contact-mini strong {
     font-size:
-        0.86rem;
+        2.5rem;
 }
 
 
@@ -1160,7 +1167,7 @@ select {
 .lead-form input:focus,
 .lead-form select:focus {
     border-color:
-        #1752a5;
+        #0A64BC;
     box-shadow:
         0 0 0 3px
         rgba(20, 86, 217, 0.12);
@@ -1237,7 +1244,7 @@ select {
     border-radius:
         var(--radius);
     background:
-        var(--dark);
+        var(--accent);
     color:
         #fff;
 }
@@ -1267,12 +1274,12 @@ select {
     margin:
         25px 0 4px;
     font-size:
-        1.4rem;
+        1.6rem;
 }
 
 .contact-card > p {
     color:
-        #98a49c;
+        #ffff;
     font-size:
         0.78rem;
     margin-bottom:
