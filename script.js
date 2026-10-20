@@ -36,7 +36,7 @@ if (form) {
         const whatsappMessage = 
 `Hello Weon Networks,
 
-I would like to request a call.
+I would like to request an installation.
 
 Name: ${name}
 Phone: ${phone}
