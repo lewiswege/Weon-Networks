@@ -60,12 +60,6 @@ body {
     border-radius: 15px;
 }
 
-/*favicon*/
-.site-header img, 
-.site-logo {
-    border-radius: 20px;
-}
-
 .site-logo {
     width: 60px;
     height: 60px;
